@@ -1,0 +1,217 @@
+INFO:aiogram.dispatcher:Start polling
+ * Serving Flask app 'main'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:aiogram.dispatcher:Run polling for bot @PHP_FREE_HOSTING_BOT id=8288680800 - 'اقوى ذكاء اصطناعي 🔥'
+INFO:aiogram.event:Update id=674158127 is handled. Duration 2533 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158128 is handled. Duration 741 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158129 is handled. Duration 1350 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158130 is handled. Duration 457 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158131 is handled. Duration 649 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158133 is handled. Duration 2454 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158132 is handled. Duration 34100 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158134 is handled. Duration 817 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158135 is handled. Duration 1173 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158136 is not handled. Duration 1 ms by bot id=8288680800
+ERROR:aiogram.event:Cause exception while process update id=674158136 by bot id=8288680800
+AttributeError: 'Message' object has no attribute 'answer_chat_action'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ALM2Themes/main.py", line 637, in process_ai_chat
+    await message.answer_chat_action("typing")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'answer_chat_action'
+INFO:aiogram.event:Update id=674158137 is not handled. Duration 1 ms by bot id=8288680800
+ERROR:aiogram.event:Cause exception while process update id=674158137 by bot id=8288680800
+AttributeError: 'Message' object has no attribute 'answer_chat_action'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ALM2Themes/main.py", line 637, in process_ai_chat
+    await message.answer_chat_action("typing")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'answer_chat_action'
+INFO:aiogram.event:Update id=674158138 is handled. Duration 595 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158139 is handled. Duration 444 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158140 is handled. Duration 1697 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158141 is handled. Duration 460 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158142 is handled. Duration 555 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158143 is handled. Duration 600 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158144 is handled. Duration 1517 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158145 is handled. Duration 934 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158146 is handled. Duration 566 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158147 is handled. Duration 1215 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158148 is handled. Duration 1918 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158149 is handled. Duration 1491 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158150 is handled. Duration 546 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158151 is handled. Duration 367 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158152 is not handled. Duration 6254 ms by bot id=8288680800
+ERROR:aiogram.event:Cause exception while process update id=674158152 by bot id=8288680800
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ALM2Themes/main.py", line 588, in process_upload_file
+    await message.answer(f"✅ تم رفع الملف: {message.document.file_name}"); await state.set_state(None); await my_hosting(message, state)
+                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/ALM2Themes/main.py", line 422, in my_hosting
+    await show_files(callback.message, path, uid)
+                     ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/pydantic/main.py", line 1026, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'
+INFO:aiogram.event:Update id=674158153 is handled. Duration 964 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158154 is handled. Duration 461 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158155 is handled. Duration 939 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158156 is handled. Duration 607 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158157 is handled. Duration 374 ms by bot id=8288680800
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:45:44] "GET /edit/7170744706/Ki/bot%20(4)%20(1)%20(1).py HTTP/1.1" 200 -
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:45:47] "GET /edit/7170744706/Ki/bot%20(4)%20(1)%20(1).py HTTP/1.1" 200 -
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:45:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:aiogram.event:Update id=674158158 is handled. Duration 384 ms by bot id=8288680800
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:45:59] "GET /console/7170744706/Ki/bot%20(4)%20(1)%20(1).py HTTP/1.1" 200 -
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:46:00] "GET /console/7170744706/Ki/bot%20(4)%20(1)%20(1).py HTTP/1.1" 200 -
+INFO:werkzeug:10.106.225.1 - - [12/Feb/2026 04:46:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:aiogram.event:Update id=674158159 is handled. Duration 3709 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158161 is not handled. Duration 2 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158162 is handled. Duration 368 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158163 is handled. Duration 1100 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158160 is handled. Duration 30681 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158164 is handled. Duration 652 ms by bot id=8288680800
+INFO:aiogram.event:Update id=674158165 is handled. Duration 760 ms by bot id=8288680800
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8288680800)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+WARNING:aiogram.dispatcher:Sleep for 1.211124 seconds and try again... (tryings = 1, bot id = 8288680800)

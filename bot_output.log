@@ -1,0 +1,25 @@
+INFO:aiogram.dispatcher:Start polling
+ * Serving Flask app 'main'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:aiogram.dispatcher:Run polling for bot @Shshsjsjsns52_bot id=8581304585 - 'عبوبزي'
+INFO:aiogram.event:Update id=185442924 is handled. Duration 1789 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442925 is handled. Duration 530 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442926 is handled. Duration 684 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442927 is handled. Duration 936 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442928 is handled. Duration 525 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442929 is handled. Duration 784 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442930 is handled. Duration 743 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442931 is handled. Duration 1053 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442932 is handled. Duration 1100 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442933 is handled. Duration 1048 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442934 is handled. Duration 534 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442935 is handled. Duration 1468 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442936 is handled. Duration 895 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442937 is handled. Duration 732 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442938 is not handled. Duration 2 ms by bot id=8581304585
+INFO:aiogram.event:Update id=185442939 is handled. Duration 889 ms by bot id=8581304585

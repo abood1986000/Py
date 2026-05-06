@@ -1,0 +1,16 @@
+{
+    "users": {
+        "8011299856": {
+            "points": 0,
+            "referred_by": null,
+            "premium_until": null,
+            "hacks": 0
+        }
+    },
+    "channels": [],
+    "admin": "8011299856",
+    "prices": {
+        "standard": 30,
+        "forbidden": 100
+    }
+}
